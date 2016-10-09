@@ -1,5 +1,6 @@
 body{
 	background-color: #CCCCFF;
+	white-space: normal;
 }
 
 header {
@@ -12,12 +13,18 @@ article {
 	border-radius: 20px;
 	padding: 20px;
 	background-color: #FAFAFA;
-	min-width: 500px;
-	margin-left: 200px;
-	margin-right: 200px;
 	line-height: 1.2;
+	margin: 40px auto 40px auto;
+	width: 1000px;
 }
 
+@media (max-width: 1080px) {
+	article {
+		width: auto;
+		left: 0;
+		right: 0;
+	}
+}
 article h2
 {
 	color: black;
