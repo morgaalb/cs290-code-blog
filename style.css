@@ -1,0 +1,29 @@
+body{
+	background-color: #CCCCFF;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+article {
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: #FAFAFA;
+	min-width: 500px;
+	margin-left: 200px;
+	margin-right: 200px;
+	line-height: 1.2;
+}
+
+article h2
+{
+	color: black;
+	margin: 0px;
+}
+
+.post-date {
+	font-style: italic;
+}
