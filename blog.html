@@ -10,12 +10,43 @@
 		<header>
 			<h1>Code Blog</h1>
 			<i>Albert Morgan</i><br>
-			<i>morgaalb@oregonstate.edu</i>
+			<i><a href="mailto:morgaalb@oregonstate.edu?Subject=I%20LOVE%20YOUR%20BLOG!">morgaalb@oregonstate.edu</a></i>
 		</header>
 	
 	
 		<main>
 				
+			<article>
+				<h2>Assignment 2</h2>
+				<div class="post-date">10/16/2016</div>
+				
+				<p>
+					This assignment was fairly straightforward. The only challenging bit was figuring
+					out exactly which function I needed to do different things. As always,
+					<a href="http://www.w3schools.com">w3schools</a> was an excellent resource.
+					I also used <a href="http://caniuse.com">caniuse.com</a> to get compatability
+					information for JavaScript's for-each construct.
+				</p>
+				
+				<p>					
+					One interesting thing I learned was the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection">
+					HTMLCollection</a> object. At first, I was using <code>Document.getElementsByClassName()</code>
+					to get items from the page. This returns an HTMLCollection, not a list, so I had to write
+					a custom for-each function for it to do what I wanted to easily. I ended up not using
+					this function, and using a <code>querySelectorAll()</code> call instead
+					(because <code>querySelectorAll()</code> supports for-each out of the box), but it was
+					stil very interesting reading about the <code>HTMLCollection</code>.
+					Apparently, the <code>HTMLCollection</code> is a <em>live</em> collection
+					of DOM objects, meaning that it will be automatically updated when a new object that
+					meets the criteria is formed. Upon researching this function, I learned that
+					it is a <em>lot</em> faster than <code>getElementsByClassName()</code>, because it hardly
+					has to do any preprocessing at all. Well, my assignment 2 already uses <code>querySelectorAll</code>,
+					and it works fine, so will keep this in mind for later projects.
+				</p>
+			
+				
+			</article>
+			
 			<article>			
 				<h2>Assignment 1</h2>
 				<div class="post-date">10/9/2016</div>
